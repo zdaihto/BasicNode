@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Js | <%= title %> </title>
+</head>
+<body>
+
+    <nav>
+        <a href="/">Home page</a>
+        <a href="/about">About page</a>
+        <a href="/Blog">Blog page</a>
+    </nav>
+
+    <h1>Welcome to the Home page</h1>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat accusantium harum officia minima quo vitae possimus eligendi totam alias fugit.</p>
+
+
+    <div class="blog_content">
+        <h2>All blogs</h2>
+
+        <% if( blogs.length > 0){%> <% blogs.forEach(blog=> {%>
+
+            <h3 class="title"><%= blog.title %></h3>
+            <p class="snippet"><%= blog.snippet %></p>
+
+          <%  }) %>
+          <% } %>
+        
+    </div>
+
+
+    
+    
+</body>
+</html>
